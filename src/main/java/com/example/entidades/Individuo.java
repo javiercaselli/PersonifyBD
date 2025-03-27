@@ -70,9 +70,9 @@ public class Individuo {
     @Override
     public String toString() {
         return  "id=" + id +
-                ", nombre='" + nombre + '\'' +
-                ", apellido1='" + apellido1 + '\'' +
-                ", apellido2='" + apellido2 + '\'' +
+                ", nombre='" + nombre + ' ' +
+                apellido1 + ' ' +
+                apellido2 + '\'' +
                 ", progenitor1=" + progenitor1 +
                 ", progenitor2=" + progenitor2;
     }
