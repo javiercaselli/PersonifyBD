@@ -11,7 +11,6 @@ import java.util.Scanner;
 
 /**
  * PersonifyBD
- *
  */
 public class App {
     // Usuario BD
@@ -26,7 +25,7 @@ public class App {
     static IndividuoService individuoService = null;
 
 
-    public static void main( String[] args ) {
+    public static void main(String[] args) {
         //Variables
         Connection con = null;
         int opcion = 0;
@@ -61,8 +60,6 @@ public class App {
         } finally {
             sc.close();
         }
-
-
 
 
     }
