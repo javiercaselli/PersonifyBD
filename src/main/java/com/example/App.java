@@ -15,10 +15,13 @@ import java.util.Scanner;
 public class App {
     // Usuario BD
     static String usuario = "javier";
+    static String usuarioSqlServer = "personifyuser";
     // Contraseña BD
     static String password = "javier123";
+    static String passwordSqlServer = "12345";
     // URL de conexión
     static String url = "jdbc:mysql://localhost:3306/personify";
+    static String urlSqlServer = "jdbc:sqlserver://localhost\\SQLEXPRESS03:1434;encrypt=false";
     // Scanner
     static Scanner sc = new Scanner(System.in);
     // Servicio de individuos
@@ -32,7 +35,8 @@ public class App {
 
         try {
             // Establece conexión con BD
-            con = DriverManager.getConnection(url, usuario, password);
+            // con = DriverManager.getConnection(url, usuario, password);
+            con = DriverManager.getConnection(urlSqlServer, usuarioSqlServer, passwordSqlServer);
 
             // Inicializa servicio para tratamiento de individuos
             individuoService = new IndividuoService(con);
